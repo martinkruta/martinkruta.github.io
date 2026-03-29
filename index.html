@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudební Databáze - Rozcestník</title>
+    
+    <style>
+        body {
+            background-color: #232649;
+            color: #EDE8B0;
+            font-family: 'Bahnschrift', sans-serif;
+            padding: 30px;
+        }
+
+        a {
+            color: #EDE8B0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #EDE8B0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vítejte v naší databázi hudebních interpretů, jejich alb a vydavatelů.</h1>
+    <p>Vyberte akci, kterou chcete provést:</p>
+
+    <h1>Interpreti</h1>
+    <ul>
+        <li><a href="https://baserow.io/public/gallery/SAhuppCET_4QZsyJ4BLrv08k72-mAy_s3T4rLViVdHg" target="_blank">Přehled interpretů</a></li>
+        <li><a href="https://baserow.io/form/glMbs0Spyh8y3RzhhLgIZYCP-z14llcz0ZKpwQKLvpg" target="_blank">Odkaz na přidání interpreta</a></li>
+    </ul>
+    <p>V této části databáze naleznete jméno interpreta, začátek jeho kariéry, informace o tom, zda je stále aktivní, s jakými vydavateli spolupracoval a jaká vydal alba. Má vztah s tabulkami Vydavatelé (1:N, jeden interpret mohl spolupracovat s více vydavateli) a Alba (1:N, jeden interpret mohl vydat více alb.).</p>
+    <h1>Alba</h1>
+    <ul>
+        <li><a href="https://baserow.io/public/gallery/wPC1M-H4IBfKWbAfQsPpJzdhxOcrw2wCFbYOHjhm3TU" target="_blank">Galerie alb</a></li>
+        <li><a href="https://baserow.io/form/xTNeNrtOCm0TUAFiMJ9-rCE7UbzJCtm9fm98_ripar4" target="_blank">Odkaz na přidání alba</a></li>
+    </ul>
+    <p>V této části databáze naleznete název alba, počet skladeb v daném albu, datum vydání a interpreta, který album vydal. Má vztah s tabulkou Interpreti (N:M, jeden interpret může mít alb, zároveň jedno album mohlo být dílem více interpretů).</p>
+    <h1>Vydavatelé</h1>    
+    <ul>
+        <li><a href="https://baserow.io/form/aT349dHxoWAiCagJ0GW-LVLPwVC4Vwq23cl2e4X_fDg" target="_blank">Odkaz na přidání vydavatele</a></li>
+    </ul>
+    <p>V této části databáze naleznete název vydavatele, datum vzniku a interprety, kteří s vydavatelem spolupracovali. Má vztah s tabulkou Interpreti (1:N, jeden interpret mohl spolupracovat s více vydavateli).</p>
+
+</body>
+</html>
